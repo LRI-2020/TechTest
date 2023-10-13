@@ -1,8 +1,6 @@
 ﻿// vite.config.js
 import path from "path";
 
-// @ts-ignore
-console.log(path.resolve(__dirname, 'src'));
 export default {
 
     base: "/TechTest",
