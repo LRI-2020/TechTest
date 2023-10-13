@@ -2,14 +2,25 @@
   "name": "techtest",
   "private": true,
   "version": "0.0.0",
-  "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "devDependencies": {
+    "@types/node": "^20.8.5",
+    "gh-pages": "^6.0.0",
+    "sass": "^1.69.3",
     "typescript": "^5.0.2",
     "vite": "^4.4.5"
+  },
+  "homepage": "https://{username}.github.io/TechTest/",
+  "dependencies": {
+    "@popperjs/core": "^2.11.8",
+    "@types/bootstrap": "^5.2.7",
+    "@types/d3": "^7.4.1",
+    "bootstrap": "^5.3.2"
   }
 }
